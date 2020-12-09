@@ -7,7 +7,9 @@ spicy_foods = [
 ]
 
 def print_spicy_foods(spicy_foods)
-
+  spicy_foods.each do |element|
+    puts "#{element[:name]} (#{element[:cuisine]}) | Heat Level: #{element[:heat_level]}"
+  end
 end
 
 def get_names(spicy_foods)
@@ -34,4 +36,5 @@ end
 # Use this to test your methods
 # run "ruby run.rb" and try calling the methods from the console
 binding.pry
-"pls"
+0
+
