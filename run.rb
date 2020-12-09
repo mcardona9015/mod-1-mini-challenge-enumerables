@@ -13,11 +13,15 @@ def print_spicy_foods(spicy_foods)
 end
 
 def get_names(spicy_foods)
-
+   spicy_foods.map do |element|
+    element[:name]
+  end
 end
 
 def spiciest_foods(spicy_foods)
-
+    spicy_foods.select do |element|
+      element[:heat_level] > 5
+    end
 end
 
 def get_spicy_food_by_cuisine(spicy_foods, cuisine)
